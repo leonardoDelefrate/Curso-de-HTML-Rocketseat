@@ -1,0 +1,167 @@
+<form>
+    <fieldset>
+        <legend>Contato</legend>
+        <label>Nome
+            <input type="text" >
+        </label>
+        <button type="submit">Enviar</button>
+        <button type="reset">Apagar</button>
+    </fieldset>
+</form>
+
+<br><br><br>
+
+<input 
+    type="text"
+    list="fruitsdata"
+    placeholder="Escolha uma fruta">
+
+<datalist id="fruitsdata">
+    <option>Laranja</option>
+    <option>Banana</option>
+    <option>Morango</option>
+    <option>Melancia</option>
+    <option>Uva</option>
+</datalist>
+
+<br><br><br><br>
+
+<!--Color-->
+<input 
+    type="color" 
+    list="colordata">
+
+<datalist id="colordata">
+    <option>#ff0000</option>
+    <option>#00ff00</option>
+</datalist>
+
+<br><br><br><br><br>
+
+<!--Senha-->
+<form>
+    <input type="password"
+        pattern="[0-9a-fA-F]{4,8}"
+        title="Tente novamente!">
+    <button type="submit">Enviar</button>
+</form>
+
+<br><br><br><br><br>
+
+<!--Email-->
+<form>
+    <label for="">Email:</label>
+    <input 
+    type="email" 
+    placeholder="Digite seu email"
+    pattern=".+rocketseat\.com\br"> <!--O "." significa qualquer caractere. O "+"
+    significa 1 ou mais vezes. A "\" serve para ser aceito o .com e o .br-->
+    <button>Enviar</button>
+</form>
+
+<br><br><br><br><br>
+
+<!--URL-->
+<form>
+    <input 
+    type="url"
+    placeholder="http://example.com"
+    required>
+    <button type="submit">Enviar</button>
+</form>
+
+<br><br><br><br><br>
+
+<!--File-->
+<input type="file" accept=".doc" multiple> <!--Esta aceitando arquivos apenas 
+do tipo doc-->
+
+<br><br><br><br><br>
+
+<!--Search-->
+<datalist id="searchterms">
+    <option>Mac</option>
+    <option>Win</option>
+    <option>Linux</option>
+</datalist> 
+
+<form list="searchterms">
+    <input 
+        type="search" 
+        list="searchterms"
+        size="30"
+        pattern="[0-9]{2}"
+        title="Digite corretamente!"
+        spellcheck="true">
+    <button>Enviar</button>
+</form>
+
+<br><br><br><br><br>
+
+<!--Radio-->
+<form>
+    <fieldset>
+        <legend>Aceita um café?</legend>
+
+        <label for="yep">Sim</label>
+        <input type="radio" value="yes" id="yep">
+
+        <label for="nop">Não</label>
+        <input type="radio" value="no" id="nop">
+    </fieldset>
+</form>
+
+<br><br><br><br><br>
+
+<!--Checkbox-->
+<label for="">Receber notificaçoes</label>
+<input 
+type="checkbox">
+
+<br><br><br><br><br>
+
+<!--Select-->
+<label for="">Selecione uma opção:</label>
+<select size="2">
+    <option value="">Uno</option>
+    <option value="">A3</option>
+    <option value="">Mustang</option>
+</select>
+
+<br><br><br><br><br>
+
+<!--Optgroup-->
+<label for="">Escolha uma das opções:</label> <br>
+    <select size="10">
+        <optgroup label="Cachorros">
+            <option value="">Pastor Alemão</option>
+            <option value="">Shitzu</option>
+            <option value="">Golden</option>
+            <option value="">Dob</option>
+        </optgroup>
+        <optgroup label="Aves">
+            <option value="">Tucano</option>
+            <option value="">Periquito</option>
+            <option value="">Calopsita</option>
+            <option value="">Papagaio</option>
+        </optgroup>
+    </select>
+
+<br><br><br><br><br>
+
+<!--Number-->
+<form action="">
+    <input type="number" step="100">
+    <button>Enviar</button>
+</form>
+
+<br><br><br><br><br>
+
+<!--Range-->
+<input type="range" min="0" max="100" step="20">
+
+<br><br><br><br><br>
+
+<!--Data e Hora-->
+<input type="date">
+<input type="time">
