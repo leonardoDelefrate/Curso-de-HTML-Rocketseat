@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+
+<style>
+    .container{
+        display: flex;
+        flex-direction: column; /*Como foi definido como coluna, o eixo principal
+        muda de horizontal para vertical e o cruzado para horizontal*/
+        height: 500px;
+        /*justify-content: flex-end; Foi ordenado que o conteudo fosse para o 
+        final do eixo principal, sendo que este foi alterado para vertical
+        anteriormente*/
+        align-items: center; /*É alinhado com base no eixo cruzado*/
+        /*gap: 10px; /*Espaçamento entre os elementos, não considera as bordas*/
+
+    }
+</style>
+
+<style>
+    .item{
+        background-color: gray;
+        border: 1px solid red;
+        height: 500px;
+        flex-basis: 500px; /*Aumenta a largura do elemento, porém, como a direção
+        foi setada como column, será a altura que aumentará*/
+    }
+</style>
